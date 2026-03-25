@@ -40,13 +40,13 @@ fetchData();
 }, []);
 
   return (
-    <div className='bg-gray-300 '>
+    <div className= 'min-h-screen 2xl:container mx-auto overflow-hidden bg-gray-300'>
         <Navbar user={user} setuser={setuser}/>
-       <div className='mx-30'>
+       <div className='lg:mx-30 md:mx-18 mx-4'>
          <Summary transactions={transactions} error={error} setTransactions={setTransactions}/>
         <From  transactions={transactions} error={error} setTransactions={setTransactions}/>
         <List  transactions={transactions} error={error} setTransactions={setTransactions}/>
-        <div className='flex justify-around'>
+        <div className='sm:flex overflow-hidden justify-around'>
           <ExpenseChart  transactions={transactions} error={error} setTransactions={setTransactions}/>
           <IncomeChart  transactions={transactions} error={error} setTransactions={setTransactions}/>
         </div>

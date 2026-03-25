@@ -21,27 +21,27 @@ const Summary = ({ transactions = [], setTransactions }) => {
 
   return (
     <div className='mt-6'>
-      <div className='flex space-x-3 justify-evenly'>
-        <div className='flex justify-between text-center bg-blue-600 p-3.5 text-white border-none w-90 h-25'>
-        <div>
-            <h1 className='text-xl font-medium mr-5'> Total Balance</h1>
-          <p className=' font-serif font-bold text-4xl'>${totalBalance}</p>
+      <div className='flex sm:space-x-3 space-x-1.5  justify-evenly'>
+        <div className='flex justify-between text-center  bg-blue-600  p-3.5 text-white border-none  w-90 h-25'>
+        <div className='mt-2 sm:mt-0 max-[425px]:mt-0'>
+            <h1 className=' md:text-[17px] sm:text-[17px] lg:text-xl  font-medium lg:mr-5'> Total Balance</h1>
+          <p className=' font-serif font-bold text-xl sm:text-2xl md:text-2xl lg:text-4xl'>${totalBalance}</p>
         </div>
-          <div><FaWallet className='text-gray-300 ' size={60}/></div>
+          <div className='w-8 h-8 mt-2  max-[520px]:hidden sm:mt-0 md:w-12 sm:w-12 sm:h-12 md:h-12 lg:w-16 lg:h-16'><FaWallet className='text-gray-300  w-full h-full'/></div>
         </div>
          <div className='flex justify-between text-center bg-green-500 p-3.5 text-white border-none w-90 h-25'>
-        <div>
-            <h1 className='text-xl font-medium mr-12'> Total Income</h1>
-          <p className=' font-serif font-bold text-4xl'>${totalIncome}</p>
+        <div className='mt-2 sm:mt-0 max-[425px]:mt-0'>
+            <h1 className=' lg:text-xl sm:text-[17px]  md:text-[17px]  font-medium lg:mr-12'> Total Income</h1>
+          <p className=' font-serif font-bold text-xl  sm:text-2xl md:text-2xl lg:text-4xl '>${totalIncome}</p>
         </div>
-          <div><FaMoneyBillWave className='text-gray-300 ' size={60}/></div>
+          <div className='w-8 h-8 mt-2 max-[520px]:hidden sm:mt-0 md:w-12 sm:w-12 sm:h-12 md:h-12 lg:w-16 lg:h-16'><FaMoneyBillWave className='text-gray-300 w-full h-full' /></div>
         </div>
           <div className='flex justify-between text-center bg-red-600 p-3.5 text-white border-none w-90 h-25'>
-        <div>
-            <h1 className='text-xl font-medium mr-5'> Total Expense</h1>
-          <p className=' font-serif font-bold text-4xl'>${totalExpense}</p>
+        <div className='mt-2 sm:mt-0 max-[425px]:mt-0'>
+            <h1 className=' lg:text-xl md:text-[17px] sm:text-[17px] font-medium  lg:mr-5'> Total Expense</h1>
+          <p className=' font-serif font-bold text-xl md:text-2xl sm:text-2xl lg:text-4xl '>${totalExpense}</p>
         </div>
-          <div><MdTrendingDown className='text-gray-300 ' size={60}/></div>
+          <div className='w-8  h-8 mt-2 max-[520px]:hidden sm:mt-0 md:w-12 md:h-12  sm:w-12 sm:h-12 lg:w-16 lg:h-16'><MdTrendingDown className='text-gray-300 w-full h-full' /></div>
         </div>
       </div>
     </div>

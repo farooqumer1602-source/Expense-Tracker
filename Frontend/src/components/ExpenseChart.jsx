@@ -45,8 +45,8 @@ safeTransactions.forEach((t) => {
   };
 
   return (
-    <div className="h-100 mt-9 flex items-center justify-center ">
-      <div className="bg-white p-6 rounded shadow w-96">
+    <div className="h-100 sm:mt-9 mt-3 flex items-center justify-center ">
+      <div className="bg-white p-6 rounded shadow lg:w-96 md:w-80 max-[800px]:w-75! ">
         {error && <p className='text-xl text-center text-red-600'>{error}</p>}
         <h2 className="text-xl font-semibold text-center mb-4">
           Expense by Category

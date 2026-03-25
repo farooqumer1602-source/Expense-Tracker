@@ -21,7 +21,7 @@ const List = ({ transactions = [], setTransactions , error}) => {
 
   const safeTransactions = Array.isArray(transactions) ? transactions : [];
   return (
-    <div className='mt-6 px-10 bg-white p-7'>
+    <div className='mt-6 overflow-scroll px-10 bg-white p-7'>
         {error && <p className='text-xl text-center text-red-600'>{error}</p>}
         <h1 className='text-2xl mb-3 font-semibold'>Transaction History:</h1>
          <table className='mt-4 w-full'>
